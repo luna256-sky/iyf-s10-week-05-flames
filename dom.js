@@ -26,7 +26,7 @@ contentElements.forEach((el) => {
     el.textContent = "This is the updated content.";
 });
 
-lastParagraph.textContent = "This is the second paragraph.";
+lastParagraph.textContent = "Lighting is actually much hotter than the sun.";
 
 
 // EVENTS

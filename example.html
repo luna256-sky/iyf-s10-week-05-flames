@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        nav ul { list-style-type: none; padding: 0; display: flex; gap: 10px; }
+        nav li { display: inline; }
+        .highlight { background-color: yellow; }
+        .hidden { display: none; }
+        .container { padding: 10px; border: 1px solid #ccc; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Main Heading</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">About</a></li>
+                <li><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article>
+            <h2>Waves</h2>
+            <p>Waves are disturbances that travel through a medium.</p>
+            <p class="hidden">Tsunamis are caused by underwater disturbances.</p>
+        </article>
+
+        <article>
+            <h2>Deep sea creatures</h2>
+            <p>Deep sea creatures live in the ocean's depths.</p>
+            <p>They survive with no sunlight.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026</p>
+    </footer>
+
+    <!-- ✅ JavaScript goes here -->
+    <script>
+        const h1 = document.querySelector("h1");
+
+        // Reading text
+        console.log(h1.textContent);
+        console.log(h1.innerText);
+
+        // Modifying text
+        h1.textContent = "Waves and Deep Sea Creatures";
+    </script>
+
+</body>
+</html>
