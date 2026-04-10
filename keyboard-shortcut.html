@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Shortcuts</title>
+</head>
+<body>
+
+    <form id="myForm">
+        <input type="text" placeholder="Your name" required><br><br>
+        <input type="email" placeholder="Your email" required><br><br>
+        <textarea placeholder="Your message" required></textarea><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        const form = document.getElementById("myForm");
+
+        // Submit form normally
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            alert("Form submitted!");
+        });
+
+        // Keyboard shortcuts
+        document.addEventListener("keydown", (e) => {
+
+            // Ctrl + S → Save
+            if (e.ctrlKey && e.key === "s") {
+                e.preventDefault(); // stop browser save dialog
+                alert("Saved!");
+            }
+
+            // Escape → Clear inputs
+            if (e.key === "Escape") {
+                const inputs = form.querySelectorAll("input, textarea");
+                inputs.forEach(input => input.value = "");
+            }
+
+            // Ctrl + Enter → Submit form
+            if (e.ctrlKey && e.key === "Enter") {
+                e.preventDefault();
+                form.requestSubmit(); // modern way to submit
+            }
+
+        });
+    </script>
+
+</body>
+</html>
