@@ -1,0 +1,86 @@
+/* Basic reset */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    background: white;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+}
+
+/* Form */
+form {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+#todo-input {
+    flex: 1;
+    padding: 8px;
+}
+
+button {
+    padding: 8px;
+    cursor: pointer;
+}
+
+/* Filters */
+.filters {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.filter {
+    margin: 2px;
+}
+
+.filter.active {
+    background-color: lightblue;
+}
+
+/* List */
+#todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Task item */
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Completed task */
+.completed .task-text {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Delete button */
+.delete-btn {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+
+/* Stats */
+.stats {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
