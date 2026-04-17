@@ -1,13 +1,13 @@
 /* Basic reset */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color:aquamarine;
     padding: 20px;
 }
 
 /* Container */
 .container {
-    background: white;
+    background: aqua;
     padding: 20px;
     max-width: 400px;
     margin: auto;
@@ -17,6 +17,7 @@ body {
 /* Title */
 h1 {
     text-align: center;
+    font: bold;
 }
 
 /* Form */
