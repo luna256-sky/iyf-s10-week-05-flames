@@ -14,19 +14,16 @@ console.log("Email input:", emailInput);
 const navLinks = document.querySelectorAll('.nav-link');
 console.log("Nav links:", navLinks);
 
-const paragraphs = document.querySelectorAll('p');
-const lastParagraph = paragraphs[paragraphs.length - 1];
-console.log("Last paragraph:", lastParagraph);
+// ✅ FIX: only select content paragraphs (not ALL <p>)
+const lastParagraph = contentElements[contentElements.length - 1];
+console.log("Last content paragraph:", lastParagraph);
 
 
 // MANIPULATING ELEMENTS
 h1.textContent = "Welcome to the DOM Manipulation Example!";
 
-contentElements.forEach((el) => {
-    el.textContent = "This is the updated content.";
-});
-
-lastParagraph.textContent = "Lighting is actually much hotter than the sun.";
+// ✅ FIX: now updates the correct paragraph
+lastParagraph.textContent = "Lightning is actually much hotter than the sun.";
 
 
 // EVENTS
